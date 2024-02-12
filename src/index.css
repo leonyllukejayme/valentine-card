@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	margin-top: -4rem;
+	font-family: 'Mogra', system-ui;
+  background: #f0e9ed;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+h1 {
+	text-align: center;
+}
+.yn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+/* CSS */
+.button-66 {
+	background-color: #f500a3;
+	border-radius: 12px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+	margin: 0;
+	font-family: 'Mogra', system-ui;
+	transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.button-66:hover {
+	background-color: #d80681;
+	transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+	.button-66 {
+		padding: 16px 44px;
+		min-width: 150px;
+	}
+}
