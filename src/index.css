@@ -33,6 +33,7 @@ h1 {
 	color: #fff;
 	cursor: pointer;
 	font-weight: 700;
+	padding: 16px 44px;
 	margin: 0;
 	font-family: 'Mogra', system-ui;
 	transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -45,7 +46,6 @@ h1 {
 
 @media (min-width: 768px) {
 	.button-66 {
-		padding: 16px 44px;
 		min-width: 150px;
 	}
 }
