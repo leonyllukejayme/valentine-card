@@ -34,7 +34,11 @@ function App() {
 			) : (
 				<>
 					<img src={photo} alt="Photo" height={150} />
-					<h1>Will you be my valentine?</h1>
+					<h1> {count == 0
+								? 'Will you be my valentine?'
+								: count > phrases.length
+								? phrases[Math.floor(Math.random() * phrases.length)]
+								: phrases[Math.min(count - 1, phrases.length - 1)]}</h1>
 					<div className="yn">
 						<button
 							className="button-66"
@@ -43,11 +47,7 @@ function App() {
 							Yes
 						</button>
 						<button className="button-66" onClick={() => setCount(count + 1)}>
-							{count == 0
-								? 'No'
-								: count > phrases.length
-								? phrases[Math.floor(Math.random() * phrases.length)]
-								: phrases[Math.min(count - 1, phrases.length - 1)]}
+						  No
 						</button>
 					</div>
 				</>
